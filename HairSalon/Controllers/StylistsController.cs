@@ -69,5 +69,16 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    // Thinking through logic of Find method
+    // public ActionResult Find(Stylist stylist)
+    // {
+    //   Stylist thisStylist = _db.Stylists
+    //                           .Include(stylist => stylist.Clients)
+    //                           .FirstOrDefault(stylist => stylist.);
+    //   return View(thisStylist);
+    // }
+    // SELECT * FROM stylists WHERE StylistName
+
   }
 }
