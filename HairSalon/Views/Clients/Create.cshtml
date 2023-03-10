@@ -6,7 +6,7 @@
 
 <p><strong>NOTE: </strong>You need to have at least one stylist in the system before you can add an client!</p>
 <p>Go to @Html.ActionLink("this page", "Create", "Stylists") to add a stylist to the system.</p>
-
+<br><br>
 <h4>Add a new client</h4>
 @using (Html.BeginForm())
 {
@@ -18,4 +18,7 @@
 
   <input type="submit" value="Add new Client" class="btn btn-default" />
 }
-<p>@Html.ActionLink("Show All Clients", "Index")</p>
+<br>
+<div id="nav-links">
+<p>🌺 @Html.ActionLink("Show All Clients", "Index") 🌺</p>
+</div>

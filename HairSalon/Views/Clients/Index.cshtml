@@ -16,11 +16,11 @@ else
   <ul>
   @foreach(Client client in Model)
   {
-    <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName</li>
+    <h4><li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName</li></h4>
   }
 </ul>
 }
 
-
-<p>@Html.ActionLink("Add new client", "Create")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<div id="nav-links">
+<p>@Html.ActionLink("Add new client", "Create") 🌺 @Html.ActionLink("Home", "Index", "Home")</p>
+</div>
