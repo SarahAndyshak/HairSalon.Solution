@@ -14,10 +14,9 @@
 
   @foreach (Stylist stylist in Model)
   {
-    <li>@Html.ActionLink($"{stylist.StylistName}", "Details", new { id = stylist.StylistId })
-  </li>
+    <h4><li>@Html.ActionLink($"{stylist.StylistName}", "Details", new { id = stylist.StylistId })
+  </li></h4>
   }
-
-<p>@Html.ActionLink("Add new stylist", "Create")</p> 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<br>
+<p>@Html.ActionLink("Add new stylist", "Create") @Html.ActionLink("Home", "Index", "Home")</p>
 @* The third argument is optional and directs which controller to use for routing *@

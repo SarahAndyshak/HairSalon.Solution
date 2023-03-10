@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(247, 156, 156);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(144, 52, 52);
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  color: rgb(70, 43, 113);
+}
+
+p {
+  font-size: large;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+/* div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width: 100px;
+  color:rgb(247, 156, 156);
+  background:rgb(144, 52, 52);
+  padding:8px;
+} */
