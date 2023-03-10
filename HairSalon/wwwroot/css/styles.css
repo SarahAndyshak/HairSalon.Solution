@@ -11,8 +11,17 @@ h1 {
   color: rgb(144, 52, 52);
 }
 
+h2 {
+  color: rgb(144, 52, 52);
+}
+
 h3 {
   text-align: center;
+  color: rgb(144, 52, 52);
+}
+
+h4 {
+  color: rgb(144, 52, 52);
 }
 
 a {

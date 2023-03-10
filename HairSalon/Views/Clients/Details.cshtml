@@ -14,5 +14,9 @@
 <br>
 
 <div id="nav-links">
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }) 🌺 @Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId }) 🌺 @Html.ActionLink("Back to list of all clients", "Index") 🌺 @Html.ActionLink("Back to list of all stylists", "Index")</p>
+<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }) 🌺 
+  @Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId }) 🌺 
+  @Html.ActionLink("Back to list of all clients", "Index") 🌺 
+  @Html.ActionLink("Back to list of all stylists", "Index", "Stylists")</p>
+<p>🌺 @Html.ActionLink("Home", "Index", "Home") 🌺</p>
 </div>
