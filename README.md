@@ -53,7 +53,7 @@ A website for salon owners to track stylists and clients. Users can create a cat
 
 ## Known Bugs
 
-No known bugs. Tests are not configured for the current format of this project.
+No known bugs as of 10 March 2023.
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
