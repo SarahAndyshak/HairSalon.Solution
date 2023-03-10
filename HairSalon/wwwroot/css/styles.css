@@ -4,6 +4,8 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   background-color: rgb(247, 156, 156);
+  background-image: linear-gradient(rgb(200, 108, 108), rgb(247, 156, 156));
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -16,7 +18,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  /* text-align: center; */
   color: rgb(144, 52, 52);
 }
 
