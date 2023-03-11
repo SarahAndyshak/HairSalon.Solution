@@ -70,14 +70,14 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    // Thinking through logic of Find method
-    // public ActionResult Find(Stylist stylist)
-    // {
-    //   Stylist thisStylist = _db.Stylists
-    //                           .Include(stylist => stylist.Clients)
-    //                           .FirstOrDefault(stylist => stylist.);
-    //   return View(thisStylist);
-    // }
+    // Thinking through logic of Find method -- just a GET method, doesn't need HttpPost
+    public ActionResult Find()
+      {
+      Stylist thisStylist = _db.Stylists
+                              .Where(stylist => stylist.StylistName.Contains());
+      return View(thisStylist);
+    }
+
     // SELECT * FROM stylists WHERE StylistName
 
   }
