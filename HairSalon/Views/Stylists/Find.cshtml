@@ -4,7 +4,7 @@
 
 @model HairSalon.Models.Stylist
 
-<h4>Search for a  Stylist</h4>
+<h4>Search for a Stylist</h4>
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.StylistName)
@@ -16,5 +16,5 @@
 
 <div id="nav-links">
 <p>@Html.ActionLink("Back to list of all stylists", "Index") 🌺 
-  @Html.ActionLink("Home", "Index", "Home") 🌺</p>
+  @Html.ActionLink("Home", "Index", "Home")</p>
 </div>
