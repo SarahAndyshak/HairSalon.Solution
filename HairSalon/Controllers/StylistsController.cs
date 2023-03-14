@@ -70,15 +70,21 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    // Thinking through logic of Find method -- just a GET method, doesn't need HttpPost
-    public ActionResult Find(string stylistName)
+    // Thinking through logic of Find method -- just a GET method, doesn't need HttpPost -- DevTools says it's a Post
+    public ActionResult Find (string stylistName)
+    {
+      return View();
+    }
+
+    [HttpPost, ActionName("Find")] // including HttpGet doesn't change DevTools's message
+    public ActionResult FindStylist(string stylistName)
       {
       Stylist thisStylist = _db.Stylists
                               .Include(stylist => stylist.Clients) //don't think this is needed
                               .FirstOrDefault(stylist => stylist.StylistName == stylistName);
-                              // .Where(stylist => stylist.StylistName.Contains());
-      // return View(thisStylist); //should show Details page for thisStylist -- need to add in StylistId?
-      return View(thisStylist.StylistDetails); //also doesn't work
+                              // .Where(stylist => stylist.StylistName.Contains(stylistName));
+      return View(thisStylist); //should show Details page for thisStylist -- need to add in StylistId?
+      // return View(thisStylist.StylistDetails);
     }
 
     // SELECT * FROM stylists WHERE StylistName -- documentation says you can use .Contains, but what variable can you use as a placeholder? If use full name, ignore placeholder issue. Currently not responding/showing stylist details page.
