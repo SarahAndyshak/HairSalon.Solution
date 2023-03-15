@@ -79,5 +79,25 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+// Find function for Clients works differently -- no list in Client class in Client.cs. 
+    // public ActionResult Find()
+    // {
+    //   return View();
+    // }
+
+    // [HttpPost, ActionName("Find")]
+    // public ActionResult FindClient(string clientName)
+    // {
+    //   //second attempt
+    //   List<Client> model = _db.Clients
+    //                           .Include(client => client.ClientName == clientName)
+    //                           .ToList();
+    //   return View(model);
+
+    //   //first attempt
+    //   // Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientName == clientName);
+    //   // return View(thisClient);
+    // }
   }
 }

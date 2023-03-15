@@ -34,6 +34,13 @@ p {
   font-size: large;
 }
 
+img {
+  width: 100%;
+  display: block;
+  margin:auto;
+  opacity: 60%;
+}
+
 div#nav-links {
   text-align: center;
 }
